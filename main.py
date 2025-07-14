@@ -28,6 +28,7 @@ prefs = {
     "plugins.always_open_pdf_externally": True
 }
 options.add_experimental_option("prefs", prefs)
+options.add_argument('--headless')  # ✅ اجرا در حالت مخفی
 driver = uc.Chrome(options=options)
 driver.get("https://poweren.ir/electricity-books/")
 time.sleep(5)
